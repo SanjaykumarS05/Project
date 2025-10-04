@@ -21,16 +21,17 @@ class LoginController extends Controller
     }
     public function about()
     {
-        $company = "Tech Solutions Inc.";
-        $address = "1234 Tech Street, Silicon Valley, CA 94043";
+        $company = "Rsoft Pvt. Ltd.";
+        $address = "Tidel Park, Pattabiram, Chennai, India";
 
         return view('admin.about', compact('company', 'address'));
     }
+    
     public function contact()
     {
-        $phone = "123-456-7890";
-        $email = "contact@techsolutions.com";
-        $address = "1234 Tech Street, Silicon Valley, CA 94043";
+        $phone = "+91 77081 51456";
+        $email = "rsoftai@gmail.com";
+        $address = "Pattabiram, Chennai, India";
         return view('admin.contact', compact('phone', 'email', 'address'));
     }
     public function logout(Request $request)
