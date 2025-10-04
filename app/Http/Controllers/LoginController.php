@@ -31,7 +31,7 @@ class LoginController extends Controller
     {
         $phone = "+91 77081 51456";
         $email = "rsoftai@gmail.com";
-        $address = "Pattabiram, Chennai, India";
+        $address = "Pattabiram, Avadi, Chennai, India";
         return view('admin.contact', compact('phone', 'email', 'address'));
     }
     public function logout(Request $request)
